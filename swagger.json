@@ -1,0 +1,1364 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "defaultTitle",
+    "description" : "defaultDescription",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "https://api.paperform.co"
+  } ],
+  "paths" : {
+    "/v1/forms/5f4d5fb6d6931f083d75e3f9" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "results" : {
+                      "type" : "object",
+                      "properties" : {
+                        "form" : {
+                          "type" : "object",
+                          "properties" : {
+                            "updated_at_utc" : {
+                              "type" : "string"
+                            },
+                            "additional_urls" : {
+                              "type" : "object",
+                              "properties" : {
+                                "duplicate_url" : {
+                                  "type" : "string"
+                                },
+                                "edit_url" : {
+                                  "type" : "string"
+                                },
+                                "submissions_url" : {
+                                  "type" : "string"
+                                }
+                              }
+                            },
+                            "cover_image_url" : {
+                              "type" : "string"
+                            },
+                            "submission_count" : {
+                              "type" : "integer"
+                            },
+                            "description" : {
+                              "type" : "string"
+                            },
+                            "created_at" : {
+                              "type" : "string"
+                            },
+                            "title" : {
+                              "type" : "string"
+                            },
+                            "url" : {
+                              "type" : "string"
+                            },
+                            "tags" : {
+                              "type" : "array",
+                              "items" : {
+                                "type" : "string"
+                              }
+                            },
+                            "created_at_utc" : {
+                              "type" : "string"
+                            },
+                            "updated_at" : {
+                              "type" : "string"
+                            },
+                            "custom_slug" : {
+                              "type" : "string"
+                            },
+                            "id" : {
+                              "type" : "string"
+                            },
+                            "space_id" : {
+                              "type" : "integer"
+                            },
+                            "slug" : {
+                              "type" : "string"
+                            },
+                            "live" : {
+                              "type" : "boolean"
+                            },
+                            "account_timezone" : {
+                              "type" : "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "status" : {
+                      "type" : "string"
+                    }
+                  }
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\"status\":\"ok\",\"results\":{\"form\":{\"id\":\"5f4d5fb6d6931f083d75e3f9\",\"slug\":\"ljse9rh6\",\"custom_slug\":\"ode-spedprivateschoolapp\",\"space_id\":88098,\"title\":\"Special Education Private School Application\",\"description\":\"\",\"url\":\"https:\\/\\/ode-spedprivateschoolapp.paperform.co\",\"cover_image_url\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/1\\/2020-09-01\\/c232pzl\\/1170823_ode_hlogo-tag_2016-final-cmyk_600x300.png\",\"live\":true,\"tags\":[\"Private School\",\"Special Education\",\"Application\"],\"submission_count\":23,\"additional_urls\":{\"edit_url\":\"https:\\/\\/paperform.co\\/edit\\/ode-spedprivateschoolapp\",\"submissions_url\":\"https:\\/\\/paperform.co\\/submissions\\/ode-spedprivateschoolapp\",\"duplicate_url\":\"https:\\/\\/paperform.co\\/create?slug=ljse9rh6&space_id=88098\"},\"created_at\":\"2020-08-31 20:38:14\",\"updated_at\":\"2021-09-13 16:57:19\",\"account_timezone\":\"America\\/Los_Angeles\",\"created_at_utc\":\"2020-08-31T20:38:14+00:00\",\"updated_at_utc\":\"2021-09-13T16:57:19+00:00\"}}}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api.paperform.co"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api.paperform.co"
+      } ]
+    },
+    "/v1/submissions/613f7653744e137db5259744" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "results" : {
+                      "type" : "object",
+                      "properties" : {
+                        "submission" : {
+                          "type" : "object",
+                          "properties" : {
+                            "score" : { },
+                            "created_at_utc" : {
+                              "type" : "string"
+                            },
+                            "charge" : {
+                              "type" : "object",
+                              "properties" : {
+                                "summary" : {
+                                  "type" : "string"
+                                },
+                                "total" : {
+                                  "type" : "integer"
+                                },
+                                "discounted_subscriptions" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "coupon" : {
+                                  "type" : "boolean"
+                                },
+                                "receipt_email" : {
+                                  "type" : "boolean"
+                                },
+                                "tax_percentage" : {
+                                  "type" : "integer"
+                                },
+                                "discount" : {
+                                  "type" : "integer"
+                                },
+                                "processing_fee" : {
+                                  "type" : "integer"
+                                },
+                                "tax" : {
+                                  "type" : "integer"
+                                },
+                                "authorize" : { },
+                                "products" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                }
+                              }
+                            },
+                            "data" : {
+                              "type" : "object",
+                              "properties" : {
+                                "2r9pk" : { },
+                                "55noa_latitude" : { },
+                                "8hbdu" : { },
+                                "1fpg1" : {
+                                  "type" : "string"
+                                },
+                                "d7gon" : {
+                                  "type" : "string"
+                                },
+                                "vr02" : { },
+                                "eh2fm" : {
+                                  "type" : "string"
+                                },
+                                "d41c2" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "55noa_state" : {
+                                  "type" : "string"
+                                },
+                                "55noa_streetNumber" : { },
+                                "9ia3a" : {
+                                  "type" : "string"
+                                },
+                                "1h2na" : {
+                                  "type" : "string"
+                                },
+                                "6oec" : {
+                                  "type" : "string"
+                                },
+                                "10lkd" : {
+                                  "type" : "string"
+                                },
+                                "score" : {
+                                  "type" : "boolean"
+                                },
+                                "feunv" : {
+                                  "type" : "object",
+                                  "properties" : {
+                                    "name" : {
+                                      "type" : "string"
+                                    },
+                                    "type" : {
+                                      "type" : "string"
+                                    },
+                                    "url" : {
+                                      "type" : "string"
+                                    }
+                                  }
+                                },
+                                "55noa_longitude" : { },
+                                "c3r96" : { },
+                                "2befl" : {
+                                  "type" : "string"
+                                },
+                                "c20nj" : {
+                                  "type" : "string"
+                                },
+                                "iabs" : { },
+                                "cjfgf" : {
+                                  "type" : "string"
+                                },
+                                "al2iu" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "969s7" : {
+                                  "type" : "string"
+                                },
+                                "11g2" : { },
+                                "6gl71" : { },
+                                "55noa_suburb" : {
+                                  "type" : "string"
+                                },
+                                "r4mv" : {
+                                  "type" : "string"
+                                },
+                                "c2ksb" : { },
+                                "8vpvr" : { },
+                                "55noa" : {
+                                  "type" : "string"
+                                },
+                                "55noa_postcode" : {
+                                  "type" : "string"
+                                },
+                                "5ufns" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "55noa_country" : {
+                                  "type" : "string"
+                                },
+                                "86qdq" : { },
+                                "cf434" : {
+                                  "type" : "string"
+                                },
+                                "55noa_street" : {
+                                  "type" : "string"
+                                },
+                                "f0kq5" : {
+                                  "type" : "string"
+                                },
+                                "8a749" : {
+                                  "type" : "string"
+                                },
+                                "36lpb" : { },
+                                "3m1up" : {
+                                  "type" : "string"
+                                },
+                                "55noa_subpremise" : { },
+                                "1nlk8" : {
+                                  "type" : "string"
+                                },
+                                "56j1g" : {
+                                  "type" : "string"
+                                }
+                              }
+                            },
+                            "pdfs" : {
+                              "type" : "object",
+                              "properties" : {
+                                "gn03mxa" : {
+                                  "type" : "object",
+                                  "properties" : {
+                                    "filename" : {
+                                      "type" : "string"
+                                    },
+                                    "url" : {
+                                      "type" : "string"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "form_id" : {
+                              "type" : "string"
+                            },
+                            "created_at" : {
+                              "type" : "string"
+                            },
+                            "id" : {
+                              "type" : "string"
+                            },
+                            "ip_address" : {
+                              "type" : "string"
+                            },
+                            "device" : {
+                              "type" : "object",
+                              "properties" : {
+                                "utm_campaign" : { },
+                                "utm_medium" : { },
+                                "ip_address" : {
+                                  "type" : "string"
+                                },
+                                "type" : {
+                                  "type" : "string"
+                                },
+                                "platform" : {
+                                  "type" : "string"
+                                },
+                                "url" : {
+                                  "type" : "string"
+                                },
+                                "utm_term" : { },
+                                "browser" : {
+                                  "type" : "string"
+                                },
+                                "device" : {
+                                  "type" : "string"
+                                },
+                                "embedded" : {
+                                  "type" : "boolean"
+                                },
+                                "user_agent" : {
+                                  "type" : "string"
+                                },
+                                "utm_source" : { },
+                                "utm_content" : { }
+                              }
+                            },
+                            "account_timezone" : {
+                              "type" : "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "status" : {
+                      "type" : "string"
+                    }
+                  }
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\"status\":\"ok\",\"results\":{\"submission\":{\"id\":\"613f7653744e137db5259744\",\"form_id\":\"5f4d5fb6d6931f083d75e3f9\",\"data\":{\"1fpg1\":\"Donald Duck\",\"969s7\":\"+1 (503) 555-1234\",\"2befl\":\"567\",\"10lkd\":\"donald.duck@myprivateschool.org\",\"c2ksb\":null,\"8hbdu\":null,\"86qdq\":null,\"vr02\":null,\"f0kq5\":\"2021-2022\",\"6oec\":\"New\",\"cjfgf\":\"My Private School\",\"eh2fm\":\"+1 (503) 555-1234\",\"55noa\":\"123 Anywhere St, Salem, OR, 97305, United States\",\"cf434\":\"No\",\"2r9pk\":null,\"8a749\":\"Salem-Keizer SD 24J\",\"c3r96\":null,\"5ufns\":[\"Prekindergarten (3 - 5)\",\"KG\",\"01\"],\"d41c2\":[\"Preschool (3-5)\",\"School-Age (5-21)\"],\"1h2na\":\"No\",\"36lpb\":null,\"al2iu\":[],\"feunv\":{\"url\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/0\\/2021-09-13\\/k503rx9\\/ExtAssmtDevAllocationSummary290931.pdf\",\"name\":\"ExtAssmtDevAllocationSummary290931.pdf\",\"type\":\"application\\/pdf\"},\"1nlk8\":\"Yes\",\"11g2\":null,\"d7gon\":\"Yes\",\"r4mv\":\"Yes\",\"9ia3a\":\"Yes\",\"8vpvr\":null,\"3m1up\":\"Yes\",\"6gl71\":null,\"c20nj\":\"I consent to using an electronic signature.\",\"56j1g\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/0\\/2021-09-13\\/mt13rt1\\/mr03ri5.png\",\"iabs\":null,\"score\":false,\"55noa_subpremise\":null,\"55noa_streetNumber\":null,\"55noa_street\":\"123 Anywhere St\",\"55noa_suburb\":\"Salem\",\"55noa_state\":\"OR\",\"55noa_postcode\":\"97305\",\"55noa_country\":\"United States\",\"55noa_latitude\":null,\"55noa_longitude\":null},\"score\":null,\"ip_address\":\"73.25.5.180\",\"device\":{\"type\":\"desktop\",\"device\":\"WebKit\",\"platform\":\"Windows\",\"browser\":\"Edge\",\"embedded\":false,\"url\":\"https:\\/\\/ode-spedprivateschoolapp.paperform.co\\/\",\"user_agent\":\"Mozilla\\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/93.0.4577.63 Safari\\/537.36 Edg\\/93.0.961.47\",\"utm_source\":null,\"utm_medium\":null,\"utm_campaign\":null,\"utm_term\":null,\"utm_content\":null,\"ip_address\":\"73.25.5.180\"},\"charge\":{\"products\":[],\"summary\":\"\",\"discount\":0,\"discounted_subscriptions\":[],\"coupon\":false,\"total\":0,\"tax\":0,\"tax_percentage\":0,\"processing_fee\":0,\"authorize\":null,\"receipt_email\":false},\"created_at\":\"2021-09-13 09:03:31\",\"pdfs\":{\"gn03mxa\":{\"url\":\"https:\\/\\/s3.amazonaws.com\\/pf-pdf-01\\/79500\\/2021-09-13\\/gn03mxa\\/eu1MHN1B0yDYd48J4ZiR\\/my-private-school-submission-for-2021-2022.pdf\",\"filename\":\"My Private School Submission for 2021-2022.pdf\"}},\"account_timezone\":\"America\\/Los_Angeles\",\"created_at_utc\":\"2021-09-13T16:03:31+00:00\"}}}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api.paperform.co"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api.paperform.co"
+      } ]
+    },
+    "/v1/partial-submissions" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "form",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "5f4d5fb6d6931f083d75e3f9"
+        }, {
+          "name" : "id",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "613f7f18185f1a6e774f581c"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "total" : {
+                      "type" : "integer"
+                    },
+                    "limit" : {
+                      "type" : "integer"
+                    },
+                    "skip" : {
+                      "type" : "integer"
+                    },
+                    "has_more" : {
+                      "type" : "boolean"
+                    },
+                    "results" : {
+                      "type" : "object",
+                      "properties" : {
+                        "partial-submissions" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object",
+                            "properties" : {
+                              "created_at_utc" : {
+                                "type" : "string"
+                              },
+                              "updated_at_utc" : {
+                                "type" : "string"
+                              },
+                              "submitted_at_utc" : {
+                                "type" : "string"
+                              },
+                              "data" : {
+                                "type" : "object",
+                                "properties" : {
+                                  "2r9pk" : { },
+                                  "8hbdu" : { },
+                                  "1fpg1" : {
+                                    "type" : "string"
+                                  },
+                                  "d7gon" : { },
+                                  "vr02" : { },
+                                  "eh2fm" : {
+                                    "type" : "string"
+                                  },
+                                  "d41c2" : {
+                                    "type" : "array",
+                                    "items" : {
+                                      "type" : "string"
+                                    }
+                                  },
+                                  "9ia3a" : { },
+                                  "1h2na" : { },
+                                  "6oec" : {
+                                    "type" : "string"
+                                  },
+                                  "10lkd" : {
+                                    "type" : "string"
+                                  },
+                                  "feunv" : {
+                                    "type" : "object",
+                                    "properties" : {
+                                      "name" : {
+                                        "type" : "string"
+                                      },
+                                      "type" : {
+                                        "type" : "string"
+                                      },
+                                      "url" : {
+                                        "type" : "string"
+                                      }
+                                    }
+                                  },
+                                  "c3r96" : { },
+                                  "2befl" : {
+                                    "type" : "string"
+                                  },
+                                  "c20nj" : {
+                                    "type" : "string"
+                                  },
+                                  "iabs" : { },
+                                  "cjfgf" : {
+                                    "type" : "string"
+                                  },
+                                  "al2iu" : {
+                                    "type" : "array",
+                                    "items" : {
+                                      "type" : "string"
+                                    }
+                                  },
+                                  "969s7" : {
+                                    "type" : "string"
+                                  },
+                                  "11g2" : { },
+                                  "6gl71" : { },
+                                  "r4mv" : { },
+                                  "c2ksb" : { },
+                                  "8vpvr" : { },
+                                  "55noa" : {
+                                    "type" : "object",
+                                    "properties" : {
+                                      "country" : {
+                                        "type" : "string"
+                                      },
+                                      "address" : {
+                                        "type" : "string"
+                                      },
+                                      "street" : {
+                                        "type" : "string"
+                                      },
+                                      "postcode" : {
+                                        "type" : "string"
+                                      },
+                                      "suburb" : {
+                                        "type" : "string"
+                                      },
+                                      "state" : {
+                                        "type" : "string"
+                                      }
+                                    }
+                                  },
+                                  "5ufns" : {
+                                    "type" : "array",
+                                    "items" : {
+                                      "type" : "string"
+                                    }
+                                  },
+                                  "86qdq" : { },
+                                  "cf434" : {
+                                    "type" : "string"
+                                  },
+                                  "f0kq5" : {
+                                    "type" : "string"
+                                  },
+                                  "8a749" : {
+                                    "type" : "string"
+                                  },
+                                  "36lpb" : { },
+                                  "3m1up" : { },
+                                  "1nlk8" : {
+                                    "type" : "string"
+                                  },
+                                  "56j1g" : { }
+                                }
+                              },
+                              "updated_at" : {
+                                "type" : "string"
+                              },
+                              "submitted_at" : {
+                                "type" : "string"
+                              },
+                              "form_id" : {
+                                "type" : "string"
+                              },
+                              "created_at" : {
+                                "type" : "string"
+                              },
+                              "id" : {
+                                "type" : "string"
+                              },
+                              "last_answered" : {
+                                "type" : "string"
+                              },
+                              "account_timezone" : {
+                                "type" : "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "status" : {
+                      "type" : "string"
+                    }
+                  }
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\"status\":\"ok\",\"results\":{\"partial-submissions\":[{\"id\":\"613f7f18185f1a6e774f581c\",\"form_id\":\"5f4d5fb6d6931f083d75e3f9\",\"data\":{\"1fpg1\":\"Scrooge McDuck\",\"969s7\":\"+1 (503) 555-1234\",\"2befl\":\"567\",\"10lkd\":\"scrooge.mcduck@duckburgprivate.org\",\"c2ksb\":null,\"8hbdu\":null,\"86qdq\":null,\"vr02\":null,\"f0kq5\":\"2021-2022\",\"6oec\":\"Renewal\",\"cjfgf\":\"Duckburg Private School\",\"eh2fm\":\"+1 (503) 555-1234\",\"55noa\":{\"street\":\"123 Anywhere St\",\"country\":\"United States\",\"suburb\":\"Salem\",\"state\":\"OR\",\"postcode\":\"97305\",\"address\":\"123 Anywhere St, Salem, OR, 97305, United States\"},\"cf434\":\"No\",\"2r9pk\":null,\"8a749\":\"Salem-Keizer SD 24J\",\"c3r96\":null,\"5ufns\":[\"01\",\"02\",\"03\"],\"d41c2\":[\"School-Age (5-21)\"],\"1h2na\":null,\"36lpb\":null,\"al2iu\":[],\"feunv\":{\"url\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/0\\/2021-09-13\\/gv13jqq\\/ExtAssmtDevAllocationSummary290931.pdf\",\"name\":\"ExtAssmtDevAllocationSummary290931.pdf\",\"type\":\"application\\/pdf\"},\"1nlk8\":\"Yes\",\"11g2\":null,\"d7gon\":null,\"r4mv\":null,\"9ia3a\":null,\"8vpvr\":null,\"3m1up\":null,\"6gl71\":null,\"c20nj\":\"I consent to using an electronic signature.\",\"56j1g\":null,\"iabs\":null},\"last_answered\":\"c20nj\",\"submitted_at\":\"2021-09-13 09:41:51\",\"updated_at\":\"2021-09-13 09:41:51\",\"created_at\":\"2021-09-13 09:40:56\",\"account_timezone\":\"America\\/Los_Angeles\",\"submitted_at_utc\":\"2021-09-13T16:41:51+00:00\",\"created_at_utc\":\"2021-09-13T16:40:56+00:00\",\"updated_at_utc\":\"2021-09-13T16:41:51+00:00\"},{\"id\":\"613f75749ee6ca67ea2a2a6e\",\"form_id\":\"5f4d5fb6d6931f083d75e3f9\",\"data\":{\"1fpg1\":\"Donald Duck\",\"969s7\":\"+1 (503) 555-1234\",\"2befl\":\"567\",\"10lkd\":\"donald.duck@myprivateschool.org\",\"c2ksb\":null,\"8hbdu\":null,\"86qdq\":null,\"vr02\":null,\"f0kq5\":\"2021-2022\",\"6oec\":\"New\",\"cjfgf\":\"My Private School\",\"eh2fm\":\"+1 (503) 555-1234\",\"55noa\":{\"street\":\"123 Anywhere St\",\"country\":\"United States\",\"suburb\":\"Salem\",\"state\":\"OR\",\"postcode\":\"97305\",\"address\":\"123 Anywhere St, Salem, OR, 97305, United States\"},\"cf434\":\"No\",\"2r9pk\":null,\"8a749\":\"Salem-Keizer SD 24J\",\"c3r96\":null,\"5ufns\":[\"Prekindergarten (3 - 5)\",\"KG\",\"01\"],\"d41c2\":[\"Preschool (3-5)\",\"School-Age (5-21)\"],\"1h2na\":\"No\",\"36lpb\":null,\"al2iu\":[],\"feunv\":{\"url\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/0\\/2021-09-13\\/k503rx9\\/ExtAssmtDevAllocationSummary290931.pdf\",\"name\":\"ExtAssmtDevAllocationSummary290931.pdf\",\"type\":\"application\\/pdf\"},\"1nlk8\":\"Yes\",\"11g2\":null,\"d7gon\":\"Yes\",\"r4mv\":\"Yes\",\"9ia3a\":\"Yes\",\"8vpvr\":null,\"3m1up\":\"Yes\",\"6gl71\":null,\"c20nj\":\"I consent to using an electronic signature.\",\"56j1g\":\"\",\"iabs\":null},\"last_answered\":\"c20nj\",\"submitted_at\":\"2021-09-13 09:03:31\",\"updated_at\":\"2021-09-13 09:03:31\",\"created_at\":\"2021-09-13 08:59:48\",\"account_timezone\":\"America\\/Los_Angeles\",\"submitted_at_utc\":\"2021-09-13T16:03:31+00:00\",\"created_at_utc\":\"2021-09-13T15:59:48+00:00\",\"updated_at_utc\":\"2021-09-13T16:03:31+00:00\"}]},\"total\":2,\"has_more\":false,\"limit\":20,\"skip\":0}"
+                  },
+                  "1" : {
+                    "value" : "{\"status\":\"ok\",\"results\":{\"partial-submissions\":[{\"id\":\"613f7f18185f1a6e774f581c\",\"form_id\":\"5f4d5fb6d6931f083d75e3f9\",\"data\":{\"1fpg1\":\"Scrooge McDuck\",\"969s7\":\"+1 (503) 555-1234\",\"2befl\":\"567\",\"10lkd\":\"scrooge.mcduck@duckburgprivate.org\",\"c2ksb\":null,\"8hbdu\":null,\"86qdq\":null,\"vr02\":null,\"f0kq5\":\"2021-2022\",\"6oec\":\"Renewal\",\"cjfgf\":\"Duckburg Private School\",\"eh2fm\":\"+1 (503) 555-1234\",\"55noa\":{\"street\":\"123 Anywhere St\",\"country\":\"United States\",\"suburb\":\"Salem\",\"state\":\"OR\",\"postcode\":\"97305\",\"address\":\"123 Anywhere St, Salem, OR, 97305, United States\"},\"cf434\":\"No\",\"2r9pk\":null,\"8a749\":\"Salem-Keizer SD 24J\",\"c3r96\":null,\"5ufns\":[\"01\",\"02\",\"03\"],\"d41c2\":[\"School-Age (5-21)\"],\"1h2na\":null,\"36lpb\":null,\"al2iu\":[],\"feunv\":{\"url\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/0\\/2021-09-13\\/gv13jqq\\/ExtAssmtDevAllocationSummary290931.pdf\",\"name\":\"ExtAssmtDevAllocationSummary290931.pdf\",\"type\":\"application\\/pdf\"},\"1nlk8\":\"Yes\",\"11g2\":null,\"d7gon\":null,\"r4mv\":null,\"9ia3a\":null,\"8vpvr\":null,\"3m1up\":null,\"6gl71\":null,\"c20nj\":\"I consent to using an electronic signature.\",\"56j1g\":null,\"iabs\":null},\"last_answered\":\"c20nj\",\"submitted_at\":\"2021-09-13 09:41:51\",\"updated_at\":\"2021-09-13 09:41:51\",\"created_at\":\"2021-09-13 09:40:56\",\"account_timezone\":\"America\\/Los_Angeles\",\"submitted_at_utc\":\"2021-09-13T16:41:51+00:00\",\"created_at_utc\":\"2021-09-13T16:40:56+00:00\",\"updated_at_utc\":\"2021-09-13T16:41:51+00:00\"},{\"id\":\"613f75749ee6ca67ea2a2a6e\",\"form_id\":\"5f4d5fb6d6931f083d75e3f9\",\"data\":{\"1fpg1\":\"Donald Duck\",\"969s7\":\"+1 (503) 555-1234\",\"2befl\":\"567\",\"10lkd\":\"donald.duck@myprivateschool.org\",\"c2ksb\":null,\"8hbdu\":null,\"86qdq\":null,\"vr02\":null,\"f0kq5\":\"2021-2022\",\"6oec\":\"New\",\"cjfgf\":\"My Private School\",\"eh2fm\":\"+1 (503) 555-1234\",\"55noa\":{\"street\":\"123 Anywhere St\",\"country\":\"United States\",\"suburb\":\"Salem\",\"state\":\"OR\",\"postcode\":\"97305\",\"address\":\"123 Anywhere St, Salem, OR, 97305, United States\"},\"cf434\":\"No\",\"2r9pk\":null,\"8a749\":\"Salem-Keizer SD 24J\",\"c3r96\":null,\"5ufns\":[\"Prekindergarten (3 - 5)\",\"KG\",\"01\"],\"d41c2\":[\"Preschool (3-5)\",\"School-Age (5-21)\"],\"1h2na\":\"No\",\"36lpb\":null,\"al2iu\":[],\"feunv\":{\"url\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/0\\/2021-09-13\\/k503rx9\\/ExtAssmtDevAllocationSummary290931.pdf\",\"name\":\"ExtAssmtDevAllocationSummary290931.pdf\",\"type\":\"application\\/pdf\"},\"1nlk8\":\"Yes\",\"11g2\":null,\"d7gon\":\"Yes\",\"r4mv\":\"Yes\",\"9ia3a\":\"Yes\",\"8vpvr\":null,\"3m1up\":\"Yes\",\"6gl71\":null,\"c20nj\":\"I consent to using an electronic signature.\",\"56j1g\":\"\",\"iabs\":null},\"last_answered\":\"c20nj\",\"submitted_at\":\"2021-09-13 09:03:31\",\"updated_at\":\"2021-09-13 09:03:31\",\"created_at\":\"2021-09-13 08:59:48\",\"account_timezone\":\"America\\/Los_Angeles\",\"submitted_at_utc\":\"2021-09-13T16:03:31+00:00\",\"created_at_utc\":\"2021-09-13T15:59:48+00:00\",\"updated_at_utc\":\"2021-09-13T16:03:31+00:00\"}]},\"total\":2,\"has_more\":false,\"limit\":20,\"skip\":0}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api.paperform.co"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api.paperform.co"
+      } ]
+    },
+    "/v1/submissions" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "form",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "5f4d5fb6d6931f083d75e3f9"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api.paperform.co"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api.paperform.co"
+      } ]
+    },
+    "/v1/forms/5f4d5fb6d6931f083d75e3f9/fields" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api.paperform.co"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api.paperform.co"
+      } ]
+    },
+    "/v1/submissions/613f7f4fe86b31294810dfdb" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "results" : {
+                      "type" : "object",
+                      "properties" : {
+                        "submission" : {
+                          "type" : "object",
+                          "properties" : {
+                            "score" : { },
+                            "created_at_utc" : {
+                              "type" : "string"
+                            },
+                            "charge" : {
+                              "type" : "object",
+                              "properties" : {
+                                "summary" : {
+                                  "type" : "string"
+                                },
+                                "total" : {
+                                  "type" : "integer"
+                                },
+                                "discounted_subscriptions" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "coupon" : {
+                                  "type" : "boolean"
+                                },
+                                "receipt_email" : {
+                                  "type" : "boolean"
+                                },
+                                "tax_percentage" : {
+                                  "type" : "integer"
+                                },
+                                "discount" : {
+                                  "type" : "integer"
+                                },
+                                "processing_fee" : {
+                                  "type" : "integer"
+                                },
+                                "tax" : {
+                                  "type" : "integer"
+                                },
+                                "authorize" : { },
+                                "products" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                }
+                              }
+                            },
+                            "data" : {
+                              "type" : "object",
+                              "properties" : {
+                                "2r9pk" : { },
+                                "55noa_latitude" : { },
+                                "8hbdu" : { },
+                                "1fpg1" : {
+                                  "type" : "string"
+                                },
+                                "d7gon" : { },
+                                "vr02" : { },
+                                "eh2fm" : {
+                                  "type" : "string"
+                                },
+                                "d41c2" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "55noa_state" : {
+                                  "type" : "string"
+                                },
+                                "55noa_streetNumber" : { },
+                                "9ia3a" : { },
+                                "1h2na" : { },
+                                "6oec" : {
+                                  "type" : "string"
+                                },
+                                "10lkd" : {
+                                  "type" : "string"
+                                },
+                                "score" : {
+                                  "type" : "boolean"
+                                },
+                                "feunv" : {
+                                  "type" : "object",
+                                  "properties" : {
+                                    "name" : {
+                                      "type" : "string"
+                                    },
+                                    "type" : {
+                                      "type" : "string"
+                                    },
+                                    "url" : {
+                                      "type" : "string"
+                                    }
+                                  }
+                                },
+                                "55noa_longitude" : { },
+                                "c3r96" : { },
+                                "2befl" : {
+                                  "type" : "string"
+                                },
+                                "c20nj" : {
+                                  "type" : "string"
+                                },
+                                "iabs" : { },
+                                "cjfgf" : {
+                                  "type" : "string"
+                                },
+                                "al2iu" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "969s7" : {
+                                  "type" : "string"
+                                },
+                                "11g2" : { },
+                                "6gl71" : { },
+                                "55noa_suburb" : {
+                                  "type" : "string"
+                                },
+                                "r4mv" : { },
+                                "c2ksb" : { },
+                                "8vpvr" : { },
+                                "55noa" : {
+                                  "type" : "string"
+                                },
+                                "55noa_postcode" : {
+                                  "type" : "string"
+                                },
+                                "5ufns" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "55noa_country" : {
+                                  "type" : "string"
+                                },
+                                "86qdq" : { },
+                                "cf434" : {
+                                  "type" : "string"
+                                },
+                                "55noa_street" : {
+                                  "type" : "string"
+                                },
+                                "f0kq5" : {
+                                  "type" : "string"
+                                },
+                                "8a749" : {
+                                  "type" : "string"
+                                },
+                                "36lpb" : { },
+                                "3m1up" : { },
+                                "55noa_subpremise" : { },
+                                "1nlk8" : {
+                                  "type" : "string"
+                                },
+                                "56j1g" : {
+                                  "type" : "string"
+                                }
+                              }
+                            },
+                            "pdfs" : {
+                              "type" : "object",
+                              "properties" : {
+                                "gn03mxa" : {
+                                  "type" : "object",
+                                  "properties" : {
+                                    "filename" : {
+                                      "type" : "string"
+                                    },
+                                    "url" : {
+                                      "type" : "string"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "form_id" : {
+                              "type" : "string"
+                            },
+                            "created_at" : {
+                              "type" : "string"
+                            },
+                            "id" : {
+                              "type" : "string"
+                            },
+                            "ip_address" : {
+                              "type" : "string"
+                            },
+                            "device" : {
+                              "type" : "object",
+                              "properties" : {
+                                "utm_campaign" : { },
+                                "utm_medium" : { },
+                                "ip_address" : {
+                                  "type" : "string"
+                                },
+                                "type" : {
+                                  "type" : "string"
+                                },
+                                "platform" : {
+                                  "type" : "string"
+                                },
+                                "url" : {
+                                  "type" : "string"
+                                },
+                                "utm_term" : { },
+                                "browser" : {
+                                  "type" : "string"
+                                },
+                                "device" : {
+                                  "type" : "string"
+                                },
+                                "embedded" : {
+                                  "type" : "boolean"
+                                },
+                                "user_agent" : {
+                                  "type" : "string"
+                                },
+                                "utm_source" : { },
+                                "utm_content" : { }
+                              }
+                            },
+                            "account_timezone" : {
+                              "type" : "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "status" : {
+                      "type" : "string"
+                    }
+                  }
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\"status\":\"ok\",\"results\":{\"submission\":{\"id\":\"613f7f4fe86b31294810dfdb\",\"form_id\":\"5f4d5fb6d6931f083d75e3f9\",\"data\":{\"1fpg1\":\"Scrooge McDuck\",\"969s7\":\"+1 (503) 555-1234\",\"2befl\":\"567\",\"10lkd\":\"scrooge.mcduck@duckburgprivate.org\",\"c2ksb\":null,\"8hbdu\":null,\"86qdq\":null,\"vr02\":null,\"f0kq5\":\"2021-2022\",\"6oec\":\"Renewal\",\"cjfgf\":\"Duckburg Private School\",\"eh2fm\":\"+1 (503) 555-1234\",\"55noa\":\"123 Anywhere St, Salem, OR, 97305, United States\",\"cf434\":\"No\",\"2r9pk\":null,\"8a749\":\"Salem-Keizer SD 24J\",\"c3r96\":null,\"5ufns\":[\"01\",\"02\",\"03\"],\"d41c2\":[\"School-Age (5-21)\"],\"1h2na\":null,\"36lpb\":null,\"al2iu\":[],\"feunv\":{\"url\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/0\\/2021-09-13\\/gv13jqq\\/ExtAssmtDevAllocationSummary290931.pdf\",\"name\":\"ExtAssmtDevAllocationSummary290931.pdf\",\"type\":\"application\\/pdf\"},\"1nlk8\":\"Yes\",\"11g2\":null,\"d7gon\":null,\"r4mv\":null,\"9ia3a\":null,\"8vpvr\":null,\"3m1up\":null,\"6gl71\":null,\"c20nj\":\"I consent to using an electronic signature.\",\"56j1g\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/0\\/2021-09-13\\/le33jfy\\/le23j6o.png\",\"iabs\":null,\"score\":false,\"55noa_subpremise\":null,\"55noa_streetNumber\":null,\"55noa_street\":\"123 Anywhere St\",\"55noa_suburb\":\"Salem\",\"55noa_state\":\"OR\",\"55noa_postcode\":\"97305\",\"55noa_country\":\"United States\",\"55noa_latitude\":null,\"55noa_longitude\":null},\"score\":null,\"ip_address\":\"73.25.5.180\",\"device\":{\"type\":\"desktop\",\"device\":\"WebKit\",\"platform\":\"Windows\",\"browser\":\"Edge\",\"embedded\":false,\"url\":\"https:\\/\\/ode-spedprivateschoolapp.paperform.co\\/\",\"user_agent\":\"Mozilla\\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/93.0.4577.63 Safari\\/537.36 Edg\\/93.0.961.47\",\"utm_source\":null,\"utm_medium\":null,\"utm_campaign\":null,\"utm_term\":null,\"utm_content\":null,\"ip_address\":\"73.25.5.180\"},\"charge\":{\"products\":[],\"summary\":\"\",\"discount\":0,\"discounted_subscriptions\":[],\"coupon\":false,\"total\":0,\"tax\":0,\"tax_percentage\":0,\"processing_fee\":0,\"authorize\":null,\"receipt_email\":false},\"created_at\":\"2021-09-13 09:41:51\",\"pdfs\":{\"gn03mxa\":{\"url\":\"https:\\/\\/s3.amazonaws.com\\/pf-pdf-01\\/79500\\/2021-09-13\\/gn03mxa\\/kJCHWhaq8H1h5bhmdNj9\\/duckburg-private-school-submission-for-2021-2022.pdf\",\"filename\":\"Duckburg Private School Submission for 2021-2022.pdf\"}},\"account_timezone\":\"America\\/Los_Angeles\",\"created_at_utc\":\"2021-09-13T16:41:51+00:00\"}}}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api.paperform.co"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api.paperform.co"
+      } ]
+    },
+    "/v1/forms" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "total" : {
+                      "type" : "integer"
+                    },
+                    "limit" : {
+                      "type" : "integer"
+                    },
+                    "skip" : {
+                      "type" : "integer"
+                    },
+                    "has_more" : {
+                      "type" : "boolean"
+                    },
+                    "results" : {
+                      "type" : "object",
+                      "properties" : {
+                        "forms" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object",
+                            "properties" : {
+                              "updated_at_utc" : {
+                                "type" : "string"
+                              },
+                              "additional_urls" : {
+                                "type" : "object",
+                                "properties" : {
+                                  "duplicate_url" : {
+                                    "type" : "string"
+                                  },
+                                  "edit_url" : {
+                                    "type" : "string"
+                                  },
+                                  "submissions_url" : {
+                                    "type" : "string"
+                                  }
+                                }
+                              },
+                              "cover_image_url" : {
+                                "type" : "string"
+                              },
+                              "submission_count" : {
+                                "type" : "integer"
+                              },
+                              "description" : {
+                                "type" : "string"
+                              },
+                              "created_at" : {
+                                "type" : "string"
+                              },
+                              "title" : {
+                                "type" : "string"
+                              },
+                              "url" : {
+                                "type" : "string"
+                              },
+                              "tags" : { },
+                              "created_at_utc" : {
+                                "type" : "string"
+                              },
+                              "updated_at" : {
+                                "type" : "string"
+                              },
+                              "custom_slug" : { },
+                              "id" : {
+                                "type" : "string"
+                              },
+                              "space_id" : {
+                                "type" : "integer"
+                              },
+                              "slug" : {
+                                "type" : "string"
+                              },
+                              "live" : {
+                                "type" : "boolean"
+                              },
+                              "account_timezone" : {
+                                "type" : "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "status" : {
+                      "type" : "string"
+                    }
+                  }
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\"status\":\"ok\",\"results\":{\"forms\":[{\"id\":\"613250ca95cbde27741d0d45\",\"slug\":\"1csedbqq\",\"custom_slug\":null,\"space_id\":88098,\"title\":\"Special Education Private School Application (copy)\",\"description\":\"\",\"url\":\"https:\\/\\/1csedbqq.paperform.co\",\"cover_image_url\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/1\\/2020-09-01\\/c232pzl\\/1170823_ode_hlogo-tag_2016-final-cmyk_600x300.png\",\"live\":true,\"tags\":null,\"submission_count\":0,\"additional_urls\":{\"edit_url\":\"https:\\/\\/paperform.co\\/edit\\/1csedbqq\",\"submissions_url\":\"https:\\/\\/paperform.co\\/submissions\\/1csedbqq\",\"duplicate_url\":\"https:\\/\\/paperform.co\\/create?slug=1csedbqq&space_id=88098\"},\"created_at\":\"2021-09-03 16:43:54\",\"updated_at\":\"2021-09-03 16:44:08\",\"account_timezone\":\"America\\/Los_Angeles\",\"created_at_utc\":\"2021-09-03T16:43:54+00:00\",\"updated_at_utc\":\"2021-09-03T16:44:08+00:00\"},{\"id\":\"5fbc32d0ae088217e264780b\",\"slug\":\"r4uk8qpw\",\"custom_slug\":null,\"space_id\":88098,\"title\":\"\",\"description\":\"\",\"url\":\"https:\\/\\/r4uk8qpw.paperform.co\",\"cover_image_url\":\"\",\"live\":true,\"tags\":null,\"submission_count\":0,\"additional_urls\":{\"edit_url\":\"https:\\/\\/paperform.co\\/edit\\/r4uk8qpw\",\"submissions_url\":\"https:\\/\\/paperform.co\\/submissions\\/r4uk8qpw\",\"duplicate_url\":\"https:\\/\\/paperform.co\\/create?slug=r4uk8qpw&space_id=88098\"},\"created_at\":\"2020-11-23 22:08:16\",\"updated_at\":\"2020-11-23 23:43:48\",\"account_timezone\":\"America\\/Los_Angeles\",\"created_at_utc\":\"2020-11-23T22:08:16+00:00\",\"updated_at_utc\":\"2020-11-23T23:43:48+00:00\"},{\"id\":\"5f4d5fb6d6931f083d75e3f9\",\"slug\":\"ljse9rh6\",\"custom_slug\":\"ode-spedprivateschoolapp\",\"space_id\":88098,\"title\":\"Special Education Private School Application\",\"description\":\"\",\"url\":\"https:\\/\\/ode-spedprivateschoolapp.paperform.co\",\"cover_image_url\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/1\\/2020-09-01\\/c232pzl\\/1170823_ode_hlogo-tag_2016-final-cmyk_600x300.png\",\"live\":true,\"tags\":[\"Private School\",\"Special Education\",\"Application\"],\"submission_count\":23,\"additional_urls\":{\"edit_url\":\"https:\\/\\/paperform.co\\/edit\\/ode-spedprivateschoolapp\",\"submissions_url\":\"https:\\/\\/paperform.co\\/submissions\\/ode-spedprivateschoolapp\",\"duplicate_url\":\"https:\\/\\/paperform.co\\/create?slug=ljse9rh6&space_id=88098\"},\"created_at\":\"2020-08-31 20:38:14\",\"updated_at\":\"2021-09-13 16:57:19\",\"account_timezone\":\"America\\/Los_Angeles\",\"created_at_utc\":\"2020-08-31T20:38:14+00:00\",\"updated_at_utc\":\"2021-09-13T16:57:19+00:00\"}]},\"total\":3,\"has_more\":false,\"limit\":20,\"skip\":0}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api.paperform.co"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api.paperform.co"
+      } ]
+    },
+    "/v1/submissions/60943cb6d8c0cc3718008c24" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "results" : {
+                      "type" : "object",
+                      "properties" : {
+                        "submission" : {
+                          "type" : "object",
+                          "properties" : {
+                            "score" : { },
+                            "created_at_utc" : {
+                              "type" : "string"
+                            },
+                            "charge" : {
+                              "type" : "object",
+                              "properties" : {
+                                "summary" : {
+                                  "type" : "string"
+                                },
+                                "total" : {
+                                  "type" : "integer"
+                                },
+                                "discounted_subscriptions" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "coupon" : {
+                                  "type" : "boolean"
+                                },
+                                "receipt_email" : {
+                                  "type" : "boolean"
+                                },
+                                "tax_percentage" : {
+                                  "type" : "integer"
+                                },
+                                "discount" : {
+                                  "type" : "integer"
+                                },
+                                "processing_fee" : {
+                                  "type" : "integer"
+                                },
+                                "tax" : {
+                                  "type" : "integer"
+                                },
+                                "authorize" : { },
+                                "products" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                }
+                              }
+                            },
+                            "data" : {
+                              "type" : "object",
+                              "properties" : {
+                                "2r9pk" : { },
+                                "55noa_latitude" : { },
+                                "8hbdu" : {
+                                  "type" : "string"
+                                },
+                                "1fpg1" : {
+                                  "type" : "string"
+                                },
+                                "d7gon" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "vr02" : {
+                                  "type" : "string"
+                                },
+                                "eh2fm" : {
+                                  "type" : "string"
+                                },
+                                "d41c2" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "55noa_state" : {
+                                  "type" : "string"
+                                },
+                                "55noa_streetNumber" : { },
+                                "9ia3a" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "1h2na" : {
+                                  "type" : "string"
+                                },
+                                "10lkd" : {
+                                  "type" : "string"
+                                },
+                                "score" : {
+                                  "type" : "boolean"
+                                },
+                                "feunv" : {
+                                  "type" : "string"
+                                },
+                                "55noa_longitude" : { },
+                                "c3r96" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "2befl" : {
+                                  "type" : "string"
+                                },
+                                "c20nj" : {
+                                  "type" : "string"
+                                },
+                                "iabs" : {
+                                  "type" : "object",
+                                  "properties" : {
+                                    "name" : {
+                                      "type" : "string"
+                                    },
+                                    "type" : {
+                                      "type" : "string"
+                                    },
+                                    "url" : {
+                                      "type" : "string"
+                                    }
+                                  }
+                                },
+                                "cjfgf" : {
+                                  "type" : "string"
+                                },
+                                "al2iu" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "969s7" : {
+                                  "type" : "string"
+                                },
+                                "11g2" : { },
+                                "55noa_suburb" : {
+                                  "type" : "string"
+                                },
+                                "r4mv" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "c2ksb" : {
+                                  "type" : "string"
+                                },
+                                "8vpvr" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "55noa" : {
+                                  "type" : "string"
+                                },
+                                "55noa_postcode" : {
+                                  "type" : "string"
+                                },
+                                "5ufns" : {
+                                  "type" : "array",
+                                  "items" : {
+                                    "type" : "string"
+                                  }
+                                },
+                                "55noa_country" : {
+                                  "type" : "string"
+                                },
+                                "86qdq" : {
+                                  "type" : "string"
+                                },
+                                "cf434" : {
+                                  "type" : "string"
+                                },
+                                "55noa_street" : {
+                                  "type" : "string"
+                                },
+                                "f0kq5" : {
+                                  "type" : "string"
+                                },
+                                "8a749" : {
+                                  "type" : "string"
+                                },
+                                "36lpb" : { },
+                                "55noa_subpremise" : { },
+                                "1nlk8" : {
+                                  "type" : "string"
+                                },
+                                "56j1g" : { }
+                              }
+                            },
+                            "pdfs" : {
+                              "type" : "object",
+                              "properties" : {
+                                "gn03mxa" : {
+                                  "type" : "object",
+                                  "properties" : {
+                                    "filename" : {
+                                      "type" : "string"
+                                    },
+                                    "url" : {
+                                      "type" : "string"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "form_id" : {
+                              "type" : "string"
+                            },
+                            "created_at" : {
+                              "type" : "string"
+                            },
+                            "id" : {
+                              "type" : "string"
+                            },
+                            "ip_address" : {
+                              "type" : "string"
+                            },
+                            "device" : {
+                              "type" : "object",
+                              "properties" : {
+                                "utm_campaign" : { },
+                                "utm_medium" : { },
+                                "ip_address" : {
+                                  "type" : "string"
+                                },
+                                "type" : {
+                                  "type" : "string"
+                                },
+                                "platform" : {
+                                  "type" : "string"
+                                },
+                                "url" : {
+                                  "type" : "string"
+                                },
+                                "utm_term" : { },
+                                "browser" : {
+                                  "type" : "string"
+                                },
+                                "device" : {
+                                  "type" : "boolean"
+                                },
+                                "embedded" : {
+                                  "type" : "boolean"
+                                },
+                                "user_agent" : {
+                                  "type" : "string"
+                                },
+                                "utm_source" : { },
+                                "utm_content" : { }
+                              }
+                            },
+                            "account_timezone" : {
+                              "type" : "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "status" : {
+                      "type" : "string"
+                    }
+                  }
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\"status\":\"ok\",\"results\":{\"submission\":{\"id\":\"60943cb6d8c0cc3718008c24\",\"form_id\":\"5f4d5fb6d6931f083d75e3f9\",\"data\":{\"1fpg1\":\"Lise Schellman\",\"969s7\":\"+1 (541) 484-4666\",\"2befl\":\"5107\",\"10lkd\":\"lise.schellman@pearlbuckcenter.com\",\"c2ksb\":\"sophie Stipek\",\"8hbdu\":\"+1 (541) 484-4666\",\"86qdq\":\"5100\",\"vr02\":\"sophie.stipek@pearlbuckcenter.com\",\"f0kq5\":\"2021-2022\",\"cjfgf\":\"Pearl Buck Center\",\"eh2fm\":\"+1 (541) 484-4666\",\"55noa\":\"3690 W 1st Ave, Eugene, OR, 97402, United States\",\"cf434\":\"No\",\"2r9pk\":null,\"8a749\":\"Eugene SD 4J\",\"c3r96\":[\"Bethel SD 52\",\"Eugene SD 4J\",\"Springfield SD 19\"],\"5ufns\":[\"Prekindergarten (3 - 5)\"],\"d41c2\":[\"Preschool (3-5)\"],\"1h2na\":\"No\",\"36lpb\":null,\"al2iu\":[\"Free Therapeutic Preschool\"],\"feunv\":\"https:\\/\\/pearlbuckcenter.com\\/\",\"1nlk8\":\"https:\\/\\/pearlbuckcenter.com\\/\",\"11g2\":null,\"d7gon\":[\"1. Fire Codes: Annual Inspection and correction of any violations related to building fire codes.\",\"2. Health Standards: Annual Inspection and correction of any violations related to environmental health, food service, and communicable disease.\",\"3. Facility Occupancy and Use: Maintains evidence of meeting the facility occupancy and use standards set forth by the appropriate local building inspectors.\",\"4. Emergency Plans and Safety Programs: The facility has a comprehensive safety program for all employees and students that meets the requirements of OAR 581-022-2225.\",\"5. Asbestos Management Plan: If the site building was acquired or leased after October 12, 1988, the site has an Asbestos Management Plan that meets the requirements of OAR 581-022-2230 and 40 CFR \\u00a7763.93.\"],\"r4mv\":[\"1. References: Policies and procedures requiring careful checking of personal and professional references for all potential employees.\",\"2. Criminal Background Check: Policies and procedures that require criminal background checks in compliance with ORS 326.603 and 326.607 for all potential employees.\",\"3. Staff Evaluation: Procedures requiring regular schedule of staff evaluation of competencies of all employees to work with children.\"],\"9ia3a\":[],\"8vpvr\":[\"1. Nondiscrimination: The school's nondiscrimination policy.\",\"2. Confidentiality: Maintains the confidentiality of student records consistent with state and federal laws relating to student records.\"],\"c20nj\":\"I do not consent to using an electronic signature. Allow me to upload a scanned copy of the signature page.\",\"56j1g\":null,\"iabs\":{\"url\":\"https:\\/\\/s3.amazonaws.com\\/pf-upload-01\\/u-79500\\/0\\/2021-05-06\\/kk42moy\\/SpEd%20Private%20School%20Assurances%20and%20Signature%20Page.pdf\",\"name\":\"SpEd Private School Assurances and Signature Page.pdf\",\"type\":\"application\\/pdf\"},\"score\":false,\"55noa_subpremise\":null,\"55noa_streetNumber\":null,\"55noa_street\":\"3690 W 1st Ave\",\"55noa_suburb\":\"Eugene\",\"55noa_state\":\"OR\",\"55noa_postcode\":\"97402\",\"55noa_country\":\"United States\",\"55noa_latitude\":null,\"55noa_longitude\":null},\"score\":null,\"ip_address\":\"173.12.179.217\",\"device\":{\"type\":\"desktop\",\"device\":false,\"platform\":\"Windows\",\"browser\":\"Firefox\",\"embedded\":false,\"url\":\"https:\\/\\/ode-spedprivateschoolapp.paperform.co\\/\",\"user_agent\":\"Mozilla\\/5.0 (Windows NT 6.1; Win64; x64; rv:88.0) Gecko\\/20100101 Firefox\\/88.0\",\"utm_source\":null,\"utm_medium\":null,\"utm_campaign\":null,\"utm_term\":null,\"utm_content\":null,\"ip_address\":\"173.12.179.217\"},\"charge\":{\"products\":[],\"summary\":\"\",\"discount\":0,\"discounted_subscriptions\":[],\"coupon\":false,\"total\":0,\"tax\":0,\"tax_percentage\":0,\"processing_fee\":0,\"authorize\":null,\"receipt_email\":false},\"created_at\":\"2021-05-06 12:00:06\",\"pdfs\":{\"gn03mxa\":{\"url\":\"https:\\/\\/s3.amazonaws.com\\/pf-pdf-01\\/79500\\/2021-05-06\\/gn03mxa\\/9bmcHkLu4iIZnoyXIUqM\\/pearl-buck-center-submission-for-2021-2022.pdf\",\"filename\":\"Pearl Buck Center Submission for 2021-2022.pdf\"}},\"account_timezone\":\"America\\/Los_Angeles\",\"created_at_utc\":\"2021-05-06T19:00:06+00:00\"}}}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api.paperform.co"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api.paperform.co"
+      } ]
+    }
+  },
+  "components" : {
+    "securitySchemes" : {
+      "oauth2" : {
+        "type" : "oauth2",
+        "flows" : {
+          "implicit" : {
+            "authorizationUrl" : "http://yourauthurl.com",
+            "scopes" : {
+              "scope_name" : "Enter your scopes here"
+            }
+          }
+        }
+      }
+    }
+  }
+}
