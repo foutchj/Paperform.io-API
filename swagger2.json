@@ -1,0 +1,1360 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "defaultDescription",
+    "title": "defaultTitle",
+    "version": "0.1"
+  },
+  "host": "api.paperform.co",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/v1/forms": {
+      "servers": [
+        {
+          "url": "https://api.paperform.co"
+        }
+      ],
+      "get": {
+        "servers": [
+          {
+            "url": "https://api.paperform.co"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "schema": {
+              "properties": {
+                "has_more": {
+                  "type": "boolean"
+                },
+                "limit": {
+                  "type": "integer"
+                },
+                "results": {
+                  "properties": {
+                    "forms": {
+                      "items": {
+                        "properties": {
+                          "tags": {},
+                          "account_timezone": {
+                            "type": "string"
+                          },
+                          "additional_urls": {
+                            "properties": {
+                              "duplicate_url": {
+                                "type": "string"
+                              },
+                              "edit_url": {
+                                "type": "string"
+                              },
+                              "submissions_url": {
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "cover_image_url": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "string"
+                          },
+                          "created_at_utc": {
+                            "type": "string"
+                          },
+                          "custom_slug": {},
+                          "description": {
+                            "type": "string"
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "live": {
+                            "type": "boolean"
+                          },
+                          "slug": {
+                            "type": "string"
+                          },
+                          "space_id": {
+                            "type": "integer"
+                          },
+                          "submission_count": {
+                            "type": "integer"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "updated_at": {
+                            "type": "string"
+                          },
+                          "updated_at_utc": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "skip": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "total": {
+                  "type": "integer"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "Auto generated using Swagger Inspector"
+      }
+    },
+    "/v1/forms/5f4d5fb6d6931f083d75e3f9": {
+      "servers": [
+        {
+          "url": "https://api.paperform.co"
+        }
+      ],
+      "get": {
+        "servers": [
+          {
+            "url": "https://api.paperform.co"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "schema": {
+              "properties": {
+                "results": {
+                  "properties": {
+                    "form": {
+                      "properties": {
+                        "tags": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "account_timezone": {
+                          "type": "string"
+                        },
+                        "additional_urls": {
+                          "properties": {
+                            "duplicate_url": {
+                              "type": "string"
+                            },
+                            "edit_url": {
+                              "type": "string"
+                            },
+                            "submissions_url": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "cover_image_url": {
+                          "type": "string"
+                        },
+                        "created_at": {
+                          "type": "string"
+                        },
+                        "created_at_utc": {
+                          "type": "string"
+                        },
+                        "custom_slug": {
+                          "type": "string"
+                        },
+                        "description": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "live": {
+                          "type": "boolean"
+                        },
+                        "slug": {
+                          "type": "string"
+                        },
+                        "space_id": {
+                          "type": "integer"
+                        },
+                        "submission_count": {
+                          "type": "integer"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "updated_at": {
+                          "type": "string"
+                        },
+                        "updated_at_utc": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "Auto generated using Swagger Inspector"
+      }
+    },
+    "/v1/forms/5f4d5fb6d6931f083d75e3f9/fields": {
+      "servers": [
+        {
+          "url": "https://api.paperform.co"
+        }
+      ],
+      "get": {
+        "servers": [
+          {
+            "url": "https://api.paperform.co"
+          }
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "description": "Auto generated using Swagger Inspector"
+      }
+    },
+    "/v1/partial-submissions": {
+      "servers": [
+        {
+          "url": "https://api.paperform.co"
+        }
+      ],
+      "get": {
+        "servers": [
+          {
+            "url": "https://api.paperform.co"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "form",
+            "type": "string",
+            "x-example": "5f4d5fb6d6931f083d75e3f9"
+          },
+          {
+            "in": "query",
+            "name": "id",
+            "type": "string",
+            "x-example": "613f7f18185f1a6e774f581c"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "schema": {
+              "properties": {
+                "has_more": {
+                  "type": "boolean"
+                },
+                "limit": {
+                  "type": "integer"
+                },
+                "results": {
+                  "properties": {
+                    "partial-submissions": {
+                      "items": {
+                        "properties": {
+                          "account_timezone": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "string"
+                          },
+                          "created_at_utc": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "properties": {
+                              "10lkd": {
+                                "type": "string"
+                              },
+                              "11g2": {},
+                              "1fpg1": {
+                                "type": "string"
+                              },
+                              "1h2na": {},
+                              "1nlk8": {
+                                "type": "string"
+                              },
+                              "2befl": {
+                                "type": "string"
+                              },
+                              "2r9pk": {},
+                              "36lpb": {},
+                              "3m1up": {},
+                              "55noa": {
+                                "properties": {
+                                  "address": {
+                                    "type": "string"
+                                  },
+                                  "country": {
+                                    "type": "string"
+                                  },
+                                  "postcode": {
+                                    "type": "string"
+                                  },
+                                  "state": {
+                                    "type": "string"
+                                  },
+                                  "street": {
+                                    "type": "string"
+                                  },
+                                  "suburb": {
+                                    "type": "string"
+                                  }
+                                },
+                                "type": "object"
+                              },
+                              "56j1g": {},
+                              "5ufns": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
+                              "6gl71": {},
+                              "6oec": {
+                                "type": "string"
+                              },
+                              "86qdq": {},
+                              "8a749": {
+                                "type": "string"
+                              },
+                              "8hbdu": {},
+                              "8vpvr": {},
+                              "969s7": {
+                                "type": "string"
+                              },
+                              "9ia3a": {},
+                              "al2iu": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
+                              "c20nj": {
+                                "type": "string"
+                              },
+                              "c2ksb": {},
+                              "c3r96": {},
+                              "cf434": {
+                                "type": "string"
+                              },
+                              "cjfgf": {
+                                "type": "string"
+                              },
+                              "d41c2": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
+                              "d7gon": {},
+                              "eh2fm": {
+                                "type": "string"
+                              },
+                              "f0kq5": {
+                                "type": "string"
+                              },
+                              "feunv": {
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "url": {
+                                    "type": "string"
+                                  }
+                                },
+                                "type": "object"
+                              },
+                              "iabs": {},
+                              "r4mv": {},
+                              "vr02": {}
+                            },
+                            "type": "object"
+                          },
+                          "form_id": {
+                            "type": "string"
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "last_answered": {
+                            "type": "string"
+                          },
+                          "submitted_at": {
+                            "type": "string"
+                          },
+                          "submitted_at_utc": {
+                            "type": "string"
+                          },
+                          "updated_at": {
+                            "type": "string"
+                          },
+                          "updated_at_utc": {
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "skip": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "total": {
+                  "type": "integer"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "Auto generated using Swagger Inspector"
+      }
+    },
+    "/v1/submissions": {
+      "servers": [
+        {
+          "url": "https://api.paperform.co"
+        }
+      ],
+      "get": {
+        "servers": [
+          {
+            "url": "https://api.paperform.co"
+          }
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "form",
+            "type": "string",
+            "x-example": "5f4d5fb6d6931f083d75e3f9"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "description": "Auto generated using Swagger Inspector"
+      }
+    },
+    "/v1/submissions/60943cb6d8c0cc3718008c24": {
+      "servers": [
+        {
+          "url": "https://api.paperform.co"
+        }
+      ],
+      "get": {
+        "servers": [
+          {
+            "url": "https://api.paperform.co"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "schema": {
+              "properties": {
+                "results": {
+                  "properties": {
+                    "submission": {
+                      "properties": {
+                        "account_timezone": {
+                          "type": "string"
+                        },
+                        "charge": {
+                          "properties": {
+                            "authorize": {},
+                            "coupon": {
+                              "type": "boolean"
+                            },
+                            "discount": {
+                              "type": "integer"
+                            },
+                            "discounted_subscriptions": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "processing_fee": {
+                              "type": "integer"
+                            },
+                            "products": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "receipt_email": {
+                              "type": "boolean"
+                            },
+                            "summary": {
+                              "type": "string"
+                            },
+                            "tax": {
+                              "type": "integer"
+                            },
+                            "tax_percentage": {
+                              "type": "integer"
+                            },
+                            "total": {
+                              "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "created_at": {
+                          "type": "string"
+                        },
+                        "created_at_utc": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "properties": {
+                            "10lkd": {
+                              "type": "string"
+                            },
+                            "11g2": {},
+                            "1fpg1": {
+                              "type": "string"
+                            },
+                            "1h2na": {
+                              "type": "string"
+                            },
+                            "1nlk8": {
+                              "type": "string"
+                            },
+                            "2befl": {
+                              "type": "string"
+                            },
+                            "2r9pk": {},
+                            "36lpb": {},
+                            "55noa": {
+                              "type": "string"
+                            },
+                            "55noa_country": {
+                              "type": "string"
+                            },
+                            "55noa_latitude": {},
+                            "55noa_longitude": {},
+                            "55noa_postcode": {
+                              "type": "string"
+                            },
+                            "55noa_state": {
+                              "type": "string"
+                            },
+                            "55noa_street": {
+                              "type": "string"
+                            },
+                            "55noa_streetNumber": {},
+                            "55noa_subpremise": {},
+                            "55noa_suburb": {
+                              "type": "string"
+                            },
+                            "56j1g": {},
+                            "5ufns": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "86qdq": {
+                              "type": "string"
+                            },
+                            "8a749": {
+                              "type": "string"
+                            },
+                            "8hbdu": {
+                              "type": "string"
+                            },
+                            "8vpvr": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "969s7": {
+                              "type": "string"
+                            },
+                            "9ia3a": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "al2iu": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "c20nj": {
+                              "type": "string"
+                            },
+                            "c2ksb": {
+                              "type": "string"
+                            },
+                            "c3r96": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "cf434": {
+                              "type": "string"
+                            },
+                            "cjfgf": {
+                              "type": "string"
+                            },
+                            "d41c2": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "d7gon": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "eh2fm": {
+                              "type": "string"
+                            },
+                            "f0kq5": {
+                              "type": "string"
+                            },
+                            "feunv": {
+                              "type": "string"
+                            },
+                            "iabs": {
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                },
+                                "type": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "r4mv": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "score": {
+                              "type": "boolean"
+                            },
+                            "vr02": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "device": {
+                          "properties": {
+                            "browser": {
+                              "type": "string"
+                            },
+                            "device": {
+                              "type": "boolean"
+                            },
+                            "embedded": {
+                              "type": "boolean"
+                            },
+                            "ip_address": {
+                              "type": "string"
+                            },
+                            "platform": {
+                              "type": "string"
+                            },
+                            "type": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "user_agent": {
+                              "type": "string"
+                            },
+                            "utm_campaign": {},
+                            "utm_content": {},
+                            "utm_medium": {},
+                            "utm_source": {},
+                            "utm_term": {}
+                          },
+                          "type": "object"
+                        },
+                        "form_id": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "ip_address": {
+                          "type": "string"
+                        },
+                        "pdfs": {
+                          "properties": {
+                            "gn03mxa": {
+                              "properties": {
+                                "filename": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "score": {}
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "Auto generated using Swagger Inspector"
+      }
+    },
+    "/v1/submissions/613f7653744e137db5259744": {
+      "servers": [
+        {
+          "url": "https://api.paperform.co"
+        }
+      ],
+      "get": {
+        "servers": [
+          {
+            "url": "https://api.paperform.co"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "schema": {
+              "properties": {
+                "results": {
+                  "properties": {
+                    "submission": {
+                      "properties": {
+                        "account_timezone": {
+                          "type": "string"
+                        },
+                        "charge": {
+                          "properties": {
+                            "authorize": {},
+                            "coupon": {
+                              "type": "boolean"
+                            },
+                            "discount": {
+                              "type": "integer"
+                            },
+                            "discounted_subscriptions": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "processing_fee": {
+                              "type": "integer"
+                            },
+                            "products": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "receipt_email": {
+                              "type": "boolean"
+                            },
+                            "summary": {
+                              "type": "string"
+                            },
+                            "tax": {
+                              "type": "integer"
+                            },
+                            "tax_percentage": {
+                              "type": "integer"
+                            },
+                            "total": {
+                              "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "created_at": {
+                          "type": "string"
+                        },
+                        "created_at_utc": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "properties": {
+                            "10lkd": {
+                              "type": "string"
+                            },
+                            "11g2": {},
+                            "1fpg1": {
+                              "type": "string"
+                            },
+                            "1h2na": {
+                              "type": "string"
+                            },
+                            "1nlk8": {
+                              "type": "string"
+                            },
+                            "2befl": {
+                              "type": "string"
+                            },
+                            "2r9pk": {},
+                            "36lpb": {},
+                            "3m1up": {
+                              "type": "string"
+                            },
+                            "55noa": {
+                              "type": "string"
+                            },
+                            "55noa_country": {
+                              "type": "string"
+                            },
+                            "55noa_latitude": {},
+                            "55noa_longitude": {},
+                            "55noa_postcode": {
+                              "type": "string"
+                            },
+                            "55noa_state": {
+                              "type": "string"
+                            },
+                            "55noa_street": {
+                              "type": "string"
+                            },
+                            "55noa_streetNumber": {},
+                            "55noa_subpremise": {},
+                            "55noa_suburb": {
+                              "type": "string"
+                            },
+                            "56j1g": {
+                              "type": "string"
+                            },
+                            "5ufns": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "6gl71": {},
+                            "6oec": {
+                              "type": "string"
+                            },
+                            "86qdq": {},
+                            "8a749": {
+                              "type": "string"
+                            },
+                            "8hbdu": {},
+                            "8vpvr": {},
+                            "969s7": {
+                              "type": "string"
+                            },
+                            "9ia3a": {
+                              "type": "string"
+                            },
+                            "al2iu": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "c20nj": {
+                              "type": "string"
+                            },
+                            "c2ksb": {},
+                            "c3r96": {},
+                            "cf434": {
+                              "type": "string"
+                            },
+                            "cjfgf": {
+                              "type": "string"
+                            },
+                            "d41c2": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "d7gon": {
+                              "type": "string"
+                            },
+                            "eh2fm": {
+                              "type": "string"
+                            },
+                            "f0kq5": {
+                              "type": "string"
+                            },
+                            "feunv": {
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                },
+                                "type": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "iabs": {},
+                            "r4mv": {
+                              "type": "string"
+                            },
+                            "score": {
+                              "type": "boolean"
+                            },
+                            "vr02": {}
+                          },
+                          "type": "object"
+                        },
+                        "device": {
+                          "properties": {
+                            "browser": {
+                              "type": "string"
+                            },
+                            "device": {
+                              "type": "string"
+                            },
+                            "embedded": {
+                              "type": "boolean"
+                            },
+                            "ip_address": {
+                              "type": "string"
+                            },
+                            "platform": {
+                              "type": "string"
+                            },
+                            "type": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "user_agent": {
+                              "type": "string"
+                            },
+                            "utm_campaign": {},
+                            "utm_content": {},
+                            "utm_medium": {},
+                            "utm_source": {},
+                            "utm_term": {}
+                          },
+                          "type": "object"
+                        },
+                        "form_id": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "ip_address": {
+                          "type": "string"
+                        },
+                        "pdfs": {
+                          "properties": {
+                            "gn03mxa": {
+                              "properties": {
+                                "filename": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "score": {}
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "Auto generated using Swagger Inspector"
+      }
+    },
+    "/v1/submissions/613f7f4fe86b31294810dfdb": {
+      "servers": [
+        {
+          "url": "https://api.paperform.co"
+        }
+      ],
+      "get": {
+        "servers": [
+          {
+            "url": "https://api.paperform.co"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "schema": {
+              "properties": {
+                "results": {
+                  "properties": {
+                    "submission": {
+                      "properties": {
+                        "account_timezone": {
+                          "type": "string"
+                        },
+                        "charge": {
+                          "properties": {
+                            "authorize": {},
+                            "coupon": {
+                              "type": "boolean"
+                            },
+                            "discount": {
+                              "type": "integer"
+                            },
+                            "discounted_subscriptions": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "processing_fee": {
+                              "type": "integer"
+                            },
+                            "products": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "receipt_email": {
+                              "type": "boolean"
+                            },
+                            "summary": {
+                              "type": "string"
+                            },
+                            "tax": {
+                              "type": "integer"
+                            },
+                            "tax_percentage": {
+                              "type": "integer"
+                            },
+                            "total": {
+                              "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "created_at": {
+                          "type": "string"
+                        },
+                        "created_at_utc": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "properties": {
+                            "10lkd": {
+                              "type": "string"
+                            },
+                            "11g2": {},
+                            "1fpg1": {
+                              "type": "string"
+                            },
+                            "1h2na": {},
+                            "1nlk8": {
+                              "type": "string"
+                            },
+                            "2befl": {
+                              "type": "string"
+                            },
+                            "2r9pk": {},
+                            "36lpb": {},
+                            "3m1up": {},
+                            "55noa": {
+                              "type": "string"
+                            },
+                            "55noa_country": {
+                              "type": "string"
+                            },
+                            "55noa_latitude": {},
+                            "55noa_longitude": {},
+                            "55noa_postcode": {
+                              "type": "string"
+                            },
+                            "55noa_state": {
+                              "type": "string"
+                            },
+                            "55noa_street": {
+                              "type": "string"
+                            },
+                            "55noa_streetNumber": {},
+                            "55noa_subpremise": {},
+                            "55noa_suburb": {
+                              "type": "string"
+                            },
+                            "56j1g": {
+                              "type": "string"
+                            },
+                            "5ufns": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "6gl71": {},
+                            "6oec": {
+                              "type": "string"
+                            },
+                            "86qdq": {},
+                            "8a749": {
+                              "type": "string"
+                            },
+                            "8hbdu": {},
+                            "8vpvr": {},
+                            "969s7": {
+                              "type": "string"
+                            },
+                            "9ia3a": {},
+                            "al2iu": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "c20nj": {
+                              "type": "string"
+                            },
+                            "c2ksb": {},
+                            "c3r96": {},
+                            "cf434": {
+                              "type": "string"
+                            },
+                            "cjfgf": {
+                              "type": "string"
+                            },
+                            "d41c2": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "d7gon": {},
+                            "eh2fm": {
+                              "type": "string"
+                            },
+                            "f0kq5": {
+                              "type": "string"
+                            },
+                            "feunv": {
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                },
+                                "type": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "iabs": {},
+                            "r4mv": {},
+                            "score": {
+                              "type": "boolean"
+                            },
+                            "vr02": {}
+                          },
+                          "type": "object"
+                        },
+                        "device": {
+                          "properties": {
+                            "browser": {
+                              "type": "string"
+                            },
+                            "device": {
+                              "type": "string"
+                            },
+                            "embedded": {
+                              "type": "boolean"
+                            },
+                            "ip_address": {
+                              "type": "string"
+                            },
+                            "platform": {
+                              "type": "string"
+                            },
+                            "type": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "user_agent": {
+                              "type": "string"
+                            },
+                            "utm_campaign": {},
+                            "utm_content": {},
+                            "utm_medium": {},
+                            "utm_source": {},
+                            "utm_term": {}
+                          },
+                          "type": "object"
+                        },
+                        "form_id": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "ip_address": {
+                          "type": "string"
+                        },
+                        "pdfs": {
+                          "properties": {
+                            "gn03mxa": {
+                              "properties": {
+                                "filename": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "score": {}
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "Auto generated using Swagger Inspector"
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "authorizationUrl": "http://yourauthurl.com",
+      "flow": "implicit",
+      "scopes": {
+        "scope_name": "Enter your scopes here"
+      },
+      "type": "oauth2"
+    }
+  },
+  "x-components": {}
+}
